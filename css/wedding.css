@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*++++++++++ Media Query +++++++++++++++++*/
+/* -- mobile(start) -- */
+@media screen and (max-width: 767px) {
+
+
+}
+/* -- mobile(end) -- */
+
+
+/*++++++++++++++++++++++++++++++++*/
+/* -- tablet(start) -- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+/* -- tablet(end) -- */
+
+
+/*++++++++++++++++++++++++++++++++*/
+/* -- desktop(start) -- */
+@media screen and (min-width: 1025px) {
+
+	section.sec_visual_01 > div.inner_wrap > div.left { top: 10%; }
+
+	section.sec_visual_01 > div.inner_wrap > div.photo > div.id > ul > li { width: 45%; }
+	
+}
+/* -- desktop(end) -- */

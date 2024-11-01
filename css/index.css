@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/*++++++++++ Media Query +++++++++++*/
+/* -- mobile(start) -- */
+@media screen and (max-width: 767px) {
+
+	section.sec_visual_01 { width: 100%; height: 100%; }
+	section.sec_visual_01 > div.inner_wrap { width: 100%; height: 100%;	overflow: hidden; }
+	section.sec_visual_01 > div.inner_wrap > div.bg { width: 100%; height: 100%; }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box { position: relative; width: 100%; height: 100%; }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > div.image_box_01 { position: absolute; left: 0; top: 0; float: left; width: 100%; height: 100%; background: url("../images/bg_main_01.jpg") no-repeat center center; background-size: cover;}
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > div.image_box_02 { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url("../images/bg_main_02.jpg") no-repeat center center; background-size: cover; }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > div.image_box_03 { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url("../images/bg_main_03.jpg") no-repeat center center; background-size: cover;}
+
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > div.prev { z-index: 5; opacity: 1; transform: translateX(-100%); }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > div.cur { z-index: 10; opacity: 1; }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > div.next { z-index: 5; opacity: 1; transform: translateX(100%); }
+	
+	section.sec_visual_01 > div.inner_wrap { position: relative; }
+	section.sec_visual_01 > div.inner_wrap > div.bg { width: 100%; height: 100%; }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > button { position: absolute; top: 50%; width: 10px; height: 19px; transform: translateY(-50%); z-index: 10; }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > button.prev { left: 5%; background: url("../images/btn_prev_m.png") no-repeat; }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > button.next { right: 5%; background: url("../images/btn_next_m.png") no-repeat; }
+	section.sec_visual_01 > div.inner_wrap > div.title { position: absolute; left: 10px; bottom: 20px; margin: 15px; font-size: 0.625em; color: #fff; opacity: 0.6; z-index: 10; }
+
+}
+/* -- mobile(end) -- */
+
+/* -- tablet(start) -- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+	aside > div.inner_wrap > h1 > a { display: block; width: 100%; height: 100%; background: url("../images/ico_logo_02.png") no-repeat; z-index: 2; }
+	aside > div.inner_wrap > h1 > a > div { width: 112px; height: 70px; }
+
+	section.sec_visual_01 > div.inner_wrap { overflow: hidden; }
+	section.sec_visual_01 > div.inner_wrap > div.bg { width: 100%; height: 100%; }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box {  position: relative; width: 100%; height: 100%; }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > div.image_box_01 { position: absolute; left: 0; top: 0; float: left; width: 100%; height: 100%; background: url("../images/bg_main_01.jpg") no-repeat center center; background-size: cover;}
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > div.image_box_02 { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url("../images/bg_main_02.jpg") no-repeat center center; background-size: cover; }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > div.image_box_03 { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url("../images/bg_main_03.jpg") no-repeat center center; background-size: cover;}
+
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > div.prev { z-index: 5; opacity: 1; transform: translateX(-100%); }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > div.cur { z-index: 10; opacity: 1; }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > div.next { z-index: 5; opacity: 1; transform: translateX(100%); }
+	
+	section.sec_visual_01 > div.inner_wrap { position: relative; }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box { width: 100%; height: 100%; }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > button { position: absolute; top:50%; width: 20px; height: 38px; z-index: 10; transform: translarte(-50%, -50%); }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > button.prev { left: 5%; background: url("../images/btn_prev.png") no-repeat; }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > button.next { right: 5%; background: url("../images/btn_next.png") no-repeat; }
+	section.sec_visual_01 > div.inner_wrap > div.title { position: absolute; left: 10px; bottom: 20px; margin: 15px; font-size: 0.875em; color: #fff; opacity: 0.6; z-index: 10; }
+
+}
+/* -- tablet(end) -- */
+
+/* -- desktop(start) -- */
+@media screen and (min-width: 1025px) {
+	
+	body { overflow: hidden; }
+
+	aside > div.inner_wrap > nav > ul > li > a { color: #fff; }
+	aside > div.inner_wrap > nav > div.social > a { background: url("../images/ico_sns_01.png") no-repeat; }
+	aside > div.inner_wrap > nav > div.copyright { color: #fff; opacity: 0.2; }
+	aside > div.inner_wrap > h1 { left: 28%; top: -20%; }
+	aside > div.inner_wrap > h1 > a { display: block; width: 100%; height: 100%; background: url("../images/ico_logo_01.png") no-repeat; z-index: 2; }
+	aside > div.inner_wrap > h1 > a > div { width: 112px; height: 70px; }
+	
+	section.sec_visual_01 { position: relative; top: 0%; left: 0%;width: 100%; height: 100%;}
+	section.sec_visual_01 > div.inner_wrap { position: absolute; top: 0%; width: 100%; height: 100%;  }
+	section.sec_visual_01 > div.inner_wrap > div.bg { width: 100%; height: 100%; }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box { position: relative; width: 100%; height: 100%; }	
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > div.image_box_01 { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url("../images/bg_main_01.jpg") no-repeat center center; background-size: cover;}
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > div.image_box_02 { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url("../images/bg_main_02.jpg") no-repeat center center; background-size: cover; }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > div.image_box_03 { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url("../images/bg_main_03.jpg") no-repeat center center; background-size: cover;}
+	
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > div.prev { z-index: 5; opacity: 1; transform: translateX(-100%); }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > div.cur { z-index: 10; opacity: 1; }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > div.next { z-index: 5; opacity: 1; transform: translateX(100%); }
+
+	section.sec_visual_01 > div.inner_wrap > div.title { position: absolute; left: 10px; bottom: 20px; margin: 15px; font-size: 1rem; color: #fff; opacity: 0.6; z-index: 10; }
+	
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > button { position: absolute; top:50%; width: 20px; height: 38px; z-index: 10; transform: translarte(-50%, -50%); }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > button.prev { left: 20%;  background: url("../images/btn_prev.png") no-repeat; }
+	section.sec_visual_01 > div.inner_wrap > div.bg > div.image_box > button.next { right: 20%; background: url("../images/btn_next.png") no-repeat; }
+
+
+}
+
+	
+/* -- desktop(end) -- */
